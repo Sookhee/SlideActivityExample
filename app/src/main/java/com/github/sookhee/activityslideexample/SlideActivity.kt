@@ -17,10 +17,10 @@ class SlideActivity : AppCompatActivity() {
         super.onBackPressed()
 
         when (slideDirection) {
-            0 -> overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
-            1 -> overridePendingTransition(R.anim.slide_left_enter, R.anim.slide_left_exit)
-            2 -> overridePendingTransition(R.anim.slide_down_enter, R.anim.slide_down_exit)
-            3 -> overridePendingTransition(R.anim.slide_up_enter, R.anim.slide_up_exit)
+            0 -> this.slideRight()
+            1 -> this.slideLeft()
+            2 -> this.slideDown()
+            3 -> this.slideUp()
         }
     }
 }

@@ -19,25 +19,25 @@ class MainActivity : AppCompatActivity() {
         binding.btnSlideLeft.setOnClickListener {
             intent.putExtra("SLIDE_DIRECTION", 0)
             startActivity(intent)
-            overridePendingTransition(R.anim.slide_left_enter, R.anim.slide_left_exit)
+            this.slideLeft()
         }
 
         binding.btnSlideRight.setOnClickListener {
             intent.putExtra("SLIDE_DIRECTION", 1)
             startActivity(intent)
-            overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
+            this.slideRight()
         }
 
         binding.btnSlideUp.setOnClickListener {
             intent.putExtra("SLIDE_DIRECTION", 2)
             startActivity(intent)
-            overridePendingTransition(R.anim.slide_up_enter, R.anim.slide_up_exit)
+            this.slideUp()
         }
 
         binding.btnSlideDown.setOnClickListener {
             intent.putExtra("SLIDE_DIRECTION", 3)
             startActivity(intent)
-            overridePendingTransition(R.anim.slide_down_enter, R.anim.slide_down_exit)
+            this.slideDown()
         }
     }
 }
